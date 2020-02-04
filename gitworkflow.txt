@@ -1,0 +1,49 @@
+1. Blobs
+    = binary large object
+    = each version of file is represented by Blob
+    = blob holds the file data but doesn't contain any metadata about the file
+    = it is a binary file and git in database
+    = files are not addressed by names
+    = everything is connect-addressed
+
+2. Trees
+    = is an object
+    = represents a directory
+    = A commit is also named by SHA1 hash
+    =
+
+3. Brancehs
+    = are used to create another line of development.
+    = by default, git has a master branch
+    = Usually, a branch is created to work on a new feature.
+    = every branch is referenced by HEAD,which points to the latest commit in the branch.
+    = whenever you make a commit, HEAD is updated with the latest commit.
+
+4. Tags
+    = assigns a meaningful name with a specific version in the repository.
+    = Tags are very similar to Brancehs, but the difference is that tags are immutable.
+    = immutable ( nobody intends to modify )
+    = once created , after new commit it will not be updated
+    = Usually, developers create tags for product releases.
+
+5. clone
+    = clone operation creates the instance of the repository.
+    = not only check the working copy, but it also mirrors the complete repository
+    = users can perform many operations with this local repository.
+    = The only time networking gets involved is when the repository instance are being 
+       synchronized.
+
+6. Pull
+    = copies the changes from a remote repository instance to a local one.
+    = synchronized between two repository instance
+    =
+
+7. PUSH
+    = copies changes from a local repository instance to a remote one.
+    = stroe the changes permanently into the Git repository.
+    = 
+
+8. HEAD
+    = is a pointer, which always points to the latest commit in the branch
+    = whenever you make a commit, HEAD is updated with the latest commit.
+    = the heads of the Brancehs are stored in ".git/refs/heads/" directory

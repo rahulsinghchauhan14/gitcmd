@@ -1,0 +1,18 @@
+1. initialize the git 
+= git init
+2. git add .
+3. git commit -m "first commit"
+4. git push origin master
+5. git push origin master -f 
+
+6. setting username and email
+    => git config --global user.name "user name"
+    => git config --global user.email "email id"
+
+7. Avoid merge commits for pulling
+    => git config --global branch.autosetuprebase always
+
+8. color highlighting
+    => git config --global color.ui true
+    => git config --global color.status auto
+    => git config --global color.branch auto
